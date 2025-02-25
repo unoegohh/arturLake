@@ -7,7 +7,7 @@ const getFishes = async (req, res) =>{
   const fishes = await Fish.find();
 
   res.json({
-    success: true,
+    success: false,
     fishes: fishesToClient(fishes)
   })
 }
